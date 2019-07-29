@@ -1,0 +1,26 @@
+{
+    "name": "devjobs",
+    "version": "1.0.0",
+    "description": "Portal de empleo con Node",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon ./index"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jara1292dev/devJobs.git"
+    },
+    "author": "José Antonio Rodríguez Arzate",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jara1292dev/devJobs/issues"
+    },
+    "homepage": "https://github.com/jara1292dev/devJobs#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-handlebars": "^3.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.1"
+    }
+}
