@@ -31,7 +31,7 @@ const vacantesSchema = new mongoose.Schema({
         type: String,
         trim: true
     },
-    urL: {
+    url: {
         type: String,
         lowercase: true
     },
