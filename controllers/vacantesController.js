@@ -19,6 +19,22 @@ exports.guardarVacante = async (req, res) => {
    const nuevaVacante = await vacante.save();
 
    //redireccionar
-   res.redirect(`/vacantes/${nuevaVacante.url}`);
+   res.redirect(`/vacante/${nuevaVacante.url}`);
+}
+
+
+//mostrar la vacante
+exports.mostrarVacante = async (req, res, next) => {
+    const vacante = await Vacante.findOne({ url: req.params.url });
+
+    //si no hay resultados
+    if(!vacante) return next();
+
+    res.render('vacante', {
+        vacante,
+        nombrePagina: vacante.titulo,
+        barra: true
+    })
+
 
 }
